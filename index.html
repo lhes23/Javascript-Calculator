@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" class="calc_main">
+      <table>
+        <tr>
+          <td colspan="4">
+            <input type="text" name="dp" id="dp" class="dp" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="button"
+              value="AC"
+              class="ac-btn btn"
+              onclick="dp.value =''"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="/"
+              class="btn"
+              onclick="dp.value +='/'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="*"
+              class="btn"
+              onclick="dp.value +='*'"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="7"
+              class="btn"
+              onclick="dp.value +='7'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="8"
+              class="btn"
+              onclick="dp.value +='8'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="9"
+              class="btn"
+              onclick="dp.value +='9'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="-"
+              class="btn"
+              onclick="dp.value +='-'"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="4"
+              class="btn"
+              onclick="dp.value +='4'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="5"
+              class="btn"
+              onclick="dp.value +='5'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="6"
+              class="btn"
+              onclick="dp.value +='6'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="+"
+              class="btn"
+              onclick="dp.value +='+'"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="1"
+              class="btn"
+              onclick="dp.value +='1'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="2"
+              class="btn"
+              onclick="dp.value +='2'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="3"
+              class="btn"
+              onclick="dp.value +='3'"
+            />
+          </td>
+          <td rowspan="2">
+            <input
+              type="button"
+              value="="
+              class="btn ac-btn"
+              onclick="if(dp.value != '') {dp.value = eval(dp.value)}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="button"
+              value="0"
+              class="btn"
+              onclick="dp.value += '0'"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="."
+              class="btn"
+              onclick="dp.value += '.'"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
